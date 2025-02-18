@@ -1,0 +1,53 @@
+.radio-input-box {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-input {
+  display: none;
+}
+
+.radio-input-box > label  {
+  position: relative;
+  width: 50%;
+  padding:20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.radio-input-box > label::before {
+  content: "";
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  border:5px solid #ddd;
+  box-sizing: border-box;
+}
+
+.radio-input-box > label p:nth-of-type(1) {
+  color:#555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+.radio-input-box > label p:nth-of-type(2) {
+  color:#a5a5a5;
+  font-size: 13px;
+}
+
+
+ /* 선택된 상태 스타일 */
+ .radio-input:checked + label{
+  border-color: #51ae90;
+  background-color: rgb(187 246 209 / 10%);
+}
+.radio-input:checked + label::before {
+  border:5px solid #51ae90;
+  background-color: #fff;
+}

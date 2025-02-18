@@ -1,0 +1,61 @@
+.editor-box {
+  border:1px solid #ddd;
+  border-radius: 8px;
+  padding-top:14px;
+}
+
+.editor-textarea {
+  height: 150px;
+  overflow: auto;
+  padding: 20px;
+  outline: none; 
+}
+.editor-textarea p {
+  font-size: 14px;
+}
+.editor-textarea > * {
+  width: 100%;
+}
+.editor-textarea  span[data-slate-placeholder="true"] {
+  margin-top:20px;
+  width:calc(100% - 40px) !important;
+}
+
+
+.editor-textarea strong {
+  font-weight: bold;
+}
+
+.editor-textarea em {
+  font-style: italic;
+}
+
+.editor-textarea code {
+  font-family: monospace;
+}
+
+
+.editor-textarea  h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.editor-textarea  h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.editor-textarea  blockquote {
+  margin: 0 20px;      /* 위/아래 1em, 왼쪽/오른쪽 40px 들여쓰기 */
+  padding: 0.5em 10px;   /* 내부 여백 */
+  border-left: 4px solid #ccc; /* 왼쪽에 회색 테두리 */
+  font-style: italic;    /* 기울임꼴 텍스트 */
+}
+
+
+.editor-textarea  ul, .editor-textarea ol, .editor-textarea  li {
+  list-style: unset;
+}
+.editor-textarea  ul, .editor-textarea ol{
+  padding-left: 16px;
+}

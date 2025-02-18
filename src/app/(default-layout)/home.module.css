@@ -1,0 +1,156 @@
+.main-box-wrapper {
+  display: grid;
+  grid-template-rows: 50px 70px 10px 230px 500px 30px;
+  grid-template-columns: 4fr 2fr;
+  gap: 40px;
+}
+
+.main-box-wrapper .tit {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: "GOSEONGGEUMGANGNURI";
+  color: #383838;
+}
+
+
+
+.main-box-wrapper .introduce-box {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  background-color: rgb(206 234 227);
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-top: -60px;
+  padding: 60px 50px;
+  word-break: keep-all;
+  color: #3d3d3d;
+}
+
+.introduce-box>.introduce-tit {
+  margin-bottom: 8px;
+}
+
+.introduce-box>.introduce-tit>span:first-of-type {
+  font-size: 30px;
+  font-family: "Katuri";
+  font-weight: normal;
+  padding: 8px;
+}
+
+.introduce-box>.introduce-tit>span:not(first-of-type) {
+  font-size: 16px;
+  margin-top: 2px;
+  vertical-align: baseline;
+}
+
+.introduce-box>.introduce-con {
+  font-size: 14px;
+  color: 888;
+}
+.banner-box {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 2;
+}
+.recent-box {
+  height: 100%;
+  grid-column: 1 / span 1;
+  font-size: 14px;
+}
+
+.notice-box {
+  height: 100%;
+  grid-column: 2 / span 2;
+  font-size: 14px;
+  
+}
+
+
+/* 지도 */
+.map-box {
+  grid-column: 1 / span 3;
+}
+
+
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {
+  .main-box-wrapper {
+    display: block;
+  }
+  .banner-box {
+    height:100px;
+    margin-top:-40px;
+    margin-bottom:40px;
+  }
+  .recent-box {
+    margin-bottom:40px;
+  } 
+  .notice-box  {
+    margin-bottom:40px;
+  }
+
+  .map-box {
+    height: 500px;
+  }
+
+}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {
+
+  .main-box-wrapper .tit {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .main-box-wrapper .introduce-box {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    background-color: rgb(206 234 227);
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -30px;
+    padding: 30px 20px 60px;
+    word-break: keep-all;
+    color: #3d3d3d;
+  }
+  
+  .introduce-box>.introduce-tit {
+    margin-bottom: 8px;
+  }
+  
+  .introduce-box>.introduce-tit>span:first-of-type {
+    font-size: 20px;
+    font-family: "Katuri";
+    font-weight: normal;
+    padding: 8px;
+  }
+
+  
+
+  
+  .banner-box {
+    height:100px;
+    margin-top:-40px;
+    margin-bottom:20px;
+  }
+  .recent-box {
+    margin-bottom:20px;
+  } 
+  .notice-box  {
+    margin-bottom:20px;
+  }
+
+
+}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}

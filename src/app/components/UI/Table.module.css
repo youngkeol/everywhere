@@ -1,0 +1,48 @@
+.table-box {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #ececec;
+  box-shadow: 2px 4px 10px rgb(137 137 137 / 10%);
+}
+
+.table-box table {
+  table-layout: fixed;
+  flex-direction: row;
+  flex-grow: 2;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.table-box table th {
+  font-weight: bold;
+}
+
+.table-box table tr {
+  height: 43px;
+}
+
+.table-box table tr td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 2px;
+}
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}

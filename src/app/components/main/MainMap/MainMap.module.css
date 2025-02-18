@@ -1,0 +1,37 @@
+.map {
+  width: 100%;
+  height: calc(100% - 44px);
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  box-shadow: 2px 4px 10px rgb(137 137 137 / 10%);
+  overflow: hidden;
+}
+
+.customoverlay {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.customoverlay-tit {
+  padding: 10px 0;
+}
+
+.customoverlay-address {
+  padding: 10px 0;
+}
+
+.customoverlay-tags {
+  display: flex;
+  gap: 3px;
+}
+
+.customoverlay-tags>li {
+  background-color: #ddd;
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 4px;
+}

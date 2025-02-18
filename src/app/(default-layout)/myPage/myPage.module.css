@@ -1,0 +1,81 @@
+.my-introdution-box {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.my-introdution-box > p >span {
+  display: inline-block;
+  position: relative;
+  padding:0 3px;
+  font-family: "GOSEONGGEUMGANGNURI";
+  font-size: 32px;
+
+}
+.my-introdution-box > p >span::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left:0;
+  width:100%;
+  height: 6px;
+  background-color: #40aa91;
+  opacity: 0.5;
+  border-radius: 2px;
+
+}
+
+.my-set-box {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
+}
+
+.descript {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #4d4d4d;
+}
+
+.modify-box>* {
+  margin-bottom: 10px;
+
+}
+
+.form-each {
+  display: flex;
+  align-items: center;
+}
+
+.form-each>label {
+  margin-right: 16px;
+  min-width: 80px;
+  text-align: right;
+}
+
+
+.my-button-box {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.my-button-box>* {
+  margin-left: 10px;
+}
+
+.modify-btn {
+  background: linear-gradient(174deg, rgba(101, 180, 140, 1) 0%, rgba(34, 161, 150, 1) 100%);
+  background-color: rgba(101, 180, 140, 0.7);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.my-leave-btn {
+  padding: 10px 20px;
+  background-color: #ed6262;
+  color: #fff;
+  border-radius: 10px;
+}

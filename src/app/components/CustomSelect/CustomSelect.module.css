@@ -1,0 +1,135 @@
+.custom-select {
+  width: 180px;
+  position: relative;
+  margin: 10px 20px 20px 0;
+  font-family: "GOSEONGGEUMGANGNURI";
+  font-size: 32px;
+}
+
+.custom-selected {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #262626;
+  border-radius: 0px;
+  box-shadow: none;
+
+  padding-right: 30px;
+}
+
+.custom-selected>i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  top: 53px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: block;
+  /* 선택된 값 클릭 시 옵션 보여줄 수 있도록 */
+  border-radius: 0 0 5px 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.options.open {
+  max-height: 200px;
+  /* 드롭다운을 펼칠 최대 높이 */
+  transition: max-height 0.3s ease-in;
+  overflow: auto;
+}
+
+
+/* 스크롤바 자체 */
+.options::-webkit-scrollbar {
+  width: 3px;
+  /* 수평 스크롤바의 높이, 수직 스크롤바의 너비 */
+  height: 10px;
+  /* 수평 스크롤바의 높이 */
+}
+
+/* 스크롤바 트랙 (배경) */
+.options::-webkit-scrollbar-track {
+  background: #ddd;
+  /* 트랙의 배경색 */
+  border-radius: 10px;
+}
+
+
+/* 스크롤바 핸들 (스크롤바를 드래그하는 부분) */
+.options::-webkit-scrollbar-thumb {
+  background-color: #9f9f9f;
+  /* 핸들의 배경색 */
+  border-radius: 10px;
+  /* 핸들의 둥근 모서리 */
+  border: 2px solid #9f9f9f;
+  /* 트랙과 핸들 사이의 경계선 */
+}
+
+/* 스크롤바 핸들이 hover 될 때 */
+.options::-webkit-scrollbar-thumb:hover {
+  cursor: all-scroll;
+  ;
+}
+
+
+
+
+.option-item {
+  font-size: 14px;
+  padding: 8px 5px;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.option-item:last-of-type {
+  border-bottom: none;
+}
+
+.option-item:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {
+  .custom-select {
+    width:150px;
+    font-size: 28px;
+  }
+  .options {
+    top:49px
+  }
+}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {
+  .custom-select {
+    width:120px;
+    font-size: 24px;
+  }
+
+  .options {
+    top:45px
+  }
+}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}

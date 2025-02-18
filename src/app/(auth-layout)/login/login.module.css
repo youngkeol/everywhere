@@ -1,0 +1,187 @@
+/* 로그인 페이지  */
+.login-contents-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.login-contents-box .login-tit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.login-contents-box .login-tit-box img {
+  width: 230px;
+}
+
+.login-contents-box .login-tit-box .logo-tit {
+  font-size: 36px;
+  font-family: "TTTogether";
+}
+
+.logo-tit span {
+  --text-shadow: 0px 4px 3px rgba(10, 10, 10, 0.1);
+  background: var(--main-bg-color-graient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-form .form-each {
+  position: relative;
+  color: #fff;
+}
+
+
+.login-form .form-each input {
+  height: 44px;
+  --background-color: #ededed;
+  color: #969696;
+  outline: none;
+  
+}
+
+.login-form .form-each input::placeholder {
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+
+.login-form .form-each:nth-of-type(1) input {
+  border-radius: 16px 16px 0 0;
+  border-bottom: none;
+}
+
+.login-form .form-each:nth-of-type(2) input {
+  border-radius: 0 0 16px 16px;
+}
+
+
+
+.login-btn {
+  width: 100%;
+  line-height: 44px;
+  margin-top: 25px;
+  text-align: center;
+  background: var(--main-bg-color);
+  background: var(--main-bg-color-graient);
+  border-radius: 16px;
+  border: 1px solid #ececec;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background: var(--main-bg-color-ac);
+  background: var(--main-bg-color-graient-ac);
+  color: #fff;
+}
+
+
+
+.login-util {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* justify-content: end; */
+  justify-content: center;
+}
+
+.login-util>li {
+  position: relative;
+  margin: 0 10px;
+}
+
+
+
+
+.login-util>li>a {
+  font-family: 'SUITE-Regular';
+  letter-spacing: -0.3px;
+  color: #888;
+  font-size: 15px;
+}
+.login-util>li>a:hover {
+  text-decoration: underline;
+}
+
+
+.sns-login-box {
+  border-top: 1px solid #a4a4a4;
+  margin-top: 60px;
+}
+
+.sns-login-box h3 {
+  display: inline-block;
+  position: relative;
+  font-family: 'SUITE-Regular';
+  color: #888;
+  margin-bottom: 15px;
+  top: -10px;
+  background: #fafaf9;
+  padding: 0 14px;
+  font-size: 15px;
+}
+
+
+.sns-login-box>ul {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.sns-login-box>ul>li {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sns-login-box>ul>li.sns-icon>a {
+  display: block;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+.sns-login-box>ul>li.naver>a {
+  background-image: url('/images/common/icon_circle_naver.png');
+}
+
+.sns-login-box>ul>li.kakao>a {
+  background-image: url('/images/common/icon_circle_kakao.png');
+}
+
+.sns-login-box>ul>li.google>a {
+  background-image: url('/images/common/icon_circle_google.png');
+}
+
+.copy {
+  color: #9d9d9d;
+  font-family: 'SUITE-Regular';
+  letter-spacing: -0.3px;
+  padding-top: 60px;
+  font-size: 13px;
+}
+
+
+
+/* 모바일  */
+@media screen and (max-width: 480px) {
+  .login-contents-box .login-tit-box {
+    margin-top:30px;
+  }
+  .login-contents-box .login-tit-box img {
+    width: 200px;
+  }
+}
+

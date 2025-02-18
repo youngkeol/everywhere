@@ -1,0 +1,224 @@
+/* 아코디언*/
+.accordion-content {
+  width: 100%;
+}
+
+.accordion-con {
+  padding: 20px 80px 20px 120px;
+  display: none;
+}
+
+.accordion-box>ul>li {
+  margin-bottom: 15px;
+  border-radius: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #ececec;
+  box-shadow: 2px 4px 5px rgb(137 137 137 / 10%);
+}
+
+.accordion-box>ul>li:last-of-type {
+  margin-bottom: 0px;
+}
+
+.accordion-tit>ol {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.accordion-tit>ol li:nth-of-type(1) {
+  width: 80px;
+}
+
+.accordion-tit>ol li:nth-of-type(1) .accordion-type {
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  --background: var(--main-bg-color);
+  --background: var(--main-bg-color-graient);
+  background-color: #69b498;
+
+}
+
+.accordion-tit>ol li:nth-of-type(2) {
+  width: calc(100% - 250px);
+  text-align: left;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.accordion-tit>ol li:nth-of-type(3) {
+  width: 120px;
+  font-size: 14px;
+}
+
+.accordion-tit>ol li:nth-of-type(4) {
+  width: 50px;
+}
+
+.accordion-tit>ol li:nth-of-type(4) i {
+  display: inline-block;
+  width: 24px;
+  line-height: 22px;
+  text-align: center;
+  border: 1px solid #ececec;
+  cursor: pointer;
+  background-color: #69b498;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.accordion-box>ul>li.active {
+  --background: var(--main-bg-color);
+  --background: var(--main-bg-color-graient);
+  background-color: #69b498;
+
+}
+
+.accordion-box>ul>li.active .accordion-con {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+.accordion-box>ul>li.active .accordion-con::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: calc(100% - 190px);
+  height: 1px;
+  background-color: #fff;
+}
+
+.accordion-box>ul>li.active .accordion-tit>ol li:nth-of-type(2),
+.accordion-box>ul>li.active .accordion-tit>ol li:nth-of-type(3) {
+  color: #fff;
+}
+
+.accordion-box>ul>li.active .accordion-tit>ol li:nth-of-type(4) i {
+  background-color: #fff;
+  cursor: pointer;
+  color: #262626;
+  font-weight: bold;
+}
+
+.accordion-box>ul>li.active .accordion-tit>ol li:nth-of-type(1) .accordion-type {
+  background: #fff;
+  color: #000;
+}
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {
+
+  .accordion-tit>ol {
+    position: relative;
+    flex-direction: column;
+    align-items: normal;
+    text-align: left;
+  }
+
+  .accordion-tit>ol li:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .accordion-tit>ol li:nth-of-type(2) {
+    width: calc(100% - 100px);
+    padding-left: 0;
+  }
+
+  .accordion-tit>ol li:nth-of-type(3) {
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    top: 58px;
+    text-align: right;
+  }
+
+  .accordion-tit>ol li:nth-of-type(4) {
+    position: absolute;
+    width: 24px;
+    right: 20px;
+    top: 18px;
+    font-size: 14px;
+
+  }
+
+  .accordion-tit>ol li:nth-of-type(1) .accordion-type {
+    max-width: 80px;
+    text-align: center;
+  }
+
+  .accordion-box>ul>li.active .accordion-con {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .accordion-box>ul>li.active .accordion-con::before {
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+
+}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {
+
+  .accordion-tit>ol {
+    padding: 15px 15px 10px 15px;
+  }
+
+  .accordion-tit>ol li:nth-of-type(1) {
+    margin-bottom: 15px;
+  }
+
+  .accordion-tit>ol li:nth-of-type(2) {
+    width: calc(100% - 100px);
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  .accordion-tit>ol li:nth-of-type(3) {
+    position: absolute;
+    width: 100px;
+    right: 15px;
+    top: 51px;
+    text-align: right;
+  }
+
+  .accordion-tit>ol li:nth-of-type(4) {
+    position: absolute;
+    width: 24px;
+    right: 15px;
+    top: 13px;
+    font-size: 14px;
+
+  }
+
+
+  .accordion-box>ul>li.active .accordion-con {
+    padding: 10px 15px 15px 15px;
+  }
+
+  .accordion-box>ul>li.active .accordion-con::before {
+    width: calc(100% - 30px);
+    left: 15px;
+  }
+
+}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}

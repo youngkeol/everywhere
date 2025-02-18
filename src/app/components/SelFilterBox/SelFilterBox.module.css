@@ -1,0 +1,65 @@
+.sel-filter-box > ul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.sel-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:6px 10px;
+  --background-color: #a1d9c2;
+  background-color: #ddd;
+  border:1px solid #ddd;
+  margin-right: 10px;;
+  border-radius: 10px;
+  color:#262626;
+  font-size: 13px;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.sel-default-filter {
+  cursor: unset;
+}
+.sel-filter-dash {
+  width: 1px;
+  height: 16px;
+  background-color: #ddd;
+  margin-right:10px;
+}
+
+.sel-filter.reset-btn-box {
+  background-color:#fff;
+}
+
+.sel-filter:hover .close-btn, 
+.sel-filter:hover .reset-btn {
+  animation: infinite-rotate 3s linear infinite;
+}
+
+
+.sel-filter .close-btn,
+.sel-filter .reset-btn
+{
+  margin-left:2px;
+  border-radius:50%;
+  text-align: center;
+  padding-top:2px;
+  padding-left:1px;
+  color:#262626;
+  font-size: 14px;
+}
+
+/* 회전 애니메이션 정의 */
+@keyframes infinite-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,55 @@
+.arrow {
+  position: absolute;
+  width:41.5px;
+  height: 41.5px;
+  border-radius: 12px;
+  border:1px solid #ddd;
+  color:#262626;
+}
+
+.arrow:hover {
+  background: linear-gradient(174deg, rgba(101, 180, 140, 1) 0%, rgba(34, 161, 150, 1) 100%);
+  color:#fff;
+  font-weight: bold;
+}
+
+.arrow.left {
+  top:0;
+  left:-60px;
+}
+.arrow.right {
+  top:0;
+  right:-60px;
+}
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {
+
+
+}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {
+  .arrow {
+    width:38.5px;
+    height: 38.5px;
+  }
+
+  .arrow.left {
+    left:-50px;
+  }
+  .arrow.right {
+    right:-50px;
+  }
+
+}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}
+

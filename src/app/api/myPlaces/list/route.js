@@ -1,0 +1,47 @@
+import jwt from "jsonwebtoken";
+import { NextResponse } from "next/server";
+import { selMyPlaces } from "@/src/lib/myPlaces/myPlacesDb";
+
+//API 엔드포인트 라우팅
+// API 핸들러
+export async function GET(req) {
+  const cookies = req.headers.get("cookie");
+  if (!cookies) {
+    return new Response(JSON.stringify({ error: "쿠키가 없습니다." }), {
+      status: 401,
+    });
+  }
+
+  const tokenMatch = cookies.match(/token=([^;]+)/);
+  if (!tokenMatch) {
+    return new Response(JSON.stringify({ error: "token 쿠키가 없습니다." }), {
+      status: 401,
+    });
+  }
+
+  const token = tokenMatch[1];
+
+  try {
+
+    // JWT 검증 및 사용자 정보 추출
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const { idx: userIdx } = decoded;
+    console.log("@@@@@@@")
+    console.log(decoded)
+    console.log(userIdx)
+
+    const myPlaces = await selMyPlaces({userIdx});
+    return new Response(JSON.stringify(myPlaces), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  } catch (error) {
+    console.log(error)
+    return NextResponse.json(
+      { message: "서버 오류가 발생했습니다." },
+      { status: 500 }
+    );
+  }
+}

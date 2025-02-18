@@ -1,0 +1,122 @@
+/* reset */
+
+
+@charset 'UTF-8';
+
+/********* reset.css **********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, ol, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+	letter-spacing: 0.5px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {font-size:1em; font-weight:normal;}
+ul,ol,li {list-style-type:none;}
+a {color: #333; text-decoration:none;}
+img {max-width:100%; max-height:100%; border:0 none; vertical-align:top;}
+address {font-style:normal;}
+/* 에디터 삽입 컨텐츠 내 테이블 스타일 적용을 위해 주석처리.
+table {width:100%; border-spacing: 0; border-collapse:collapse; table-layout:fixed;} 
+*/
+button {margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; border:0 none; background-color:transparent; font-family:inherit; font-size:inherit; cursor:pointer;}
+input {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; padding:0 10px; font-family:inherit;}
+input:disabled {background-color: #e5f0ff !important;}
+input:read-only {background-color: #edeef0 !important;}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #ccc; letter-spacing: -0.5px;}
+input::-moz-placeholder { /* Firefox 19+ */ color: #ccc; letter-spacing: -0.5px;}
+input:-ms-input-placeholder { /* IE 10+ */ color: #ccc; letter-spacing: -0.5px;}
+input:-moz-placeholder { /* Firefox 18- */ color: #ccc; letter-spacing: -0.5px;}
+textarea {width:100%; color: #999; font-family: "Noto Sans KR"; font-size: inherit; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; letter-spacing: -0.5px;}
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #bbb; letter-spacing: -0.5px;}
+textarea::-moz-placeholder { /* Firefox 19+ */ color: #bbb; letter-spacing: -0.5px;}
+textarea:-ms-input-placeholder { /* IE 10+ */ color: #bbb; letter-spacing: -0.5px;}
+textarea:-moz-placeholder { /* Firefox 18- */ color: #bbb; letter-spacing: -0.5px;}
+select {color: #555; font-family:"Noto Sans KR"; letter-spacing: -0.5px; cursor:pointer;}
+select::-ms-expand {padding-right: 10px; background-color: #fff; border-width: 0;}
+input, textarea, select {
+  outline: none;
+}
+/* 에디터 삽입 컨텐츠 리셋스타일 제거. */
+.editor_view ol, .editor_view ol > li {list-style-type:decimal;}
+.editor_view ul, .editor_view ul > li {list-style-type:disc;}
+.editor_view ol, .editor_view ul {padding-left:19px;}
+.editor_view i, .editor_view em {font-style:italic;}
+.editor_view b, .editor_view strong {font-weight:bold;}
+
+
+.hidden {overflow: hidden; display: inline-block; border: 0; margin: -1px; width: 1px; height: 1px;  clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
+
+
+
+
+/*
+  background-color: #69b498;
+
+  */
+
+:root {
+  --main-color: #268a7b;
+  --main-bg-color :  rgb(101,180,140);
+  --main-bg-color-graient: linear-gradient(174deg, rgba(101,180,140,1) 0%, rgba(34,161,150,1) 100%);
+  --main-bg-color-ac :  rgb(101,180,140);
+  --main-bg-color-graient-ac: linear-gradient(174deg, rgba(101,180,140,1) 0%, rgba(34,161,150,1) 100%);
+}
+
+
+
+
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* 기본 제공되는 화살표 숨기기 */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

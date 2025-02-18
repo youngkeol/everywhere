@@ -1,0 +1,67 @@
+.tags-input-box {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.tags-input-box input ::placeholder{
+  font-size: 13px;
+}
+
+.tags-input-box>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 7px 14px;
+  height: 44px;
+  border-radius: 6px;
+}
+
+.tags-box>button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+
+.tags-box>button>i {
+  padding-top: 3px;
+  color: #262626;
+}
+
+.tags-input-box .input-box {
+  position: relative;
+  padding: 0;
+  border: none;
+}
+
+.input-box>input {
+  width: 180px;
+  height: 44px;
+  padding-right: 30px;
+}
+
+.input-box>input::placeholder {
+  font-size: 14px;
+}
+
+.input-box>button {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+
+.input-box>button>i {
+  padding-top: 3px;
+  color: #262626;
+}

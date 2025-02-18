@@ -1,0 +1,22 @@
+.type {
+  font-size: 12px;
+  border-radius: 6px;
+  padding:4px;
+  margin:0 2px;
+  background-color: #69b498;
+  color:#fff;
+}
+
+.date {
+  font-size: 12px;;
+}
+
+
+.cursor-row {
+  cursor:pointer
+}
+
+.cursor-row:hover {
+  background-color: #cfeae4;
+  cursor:pointer
+}

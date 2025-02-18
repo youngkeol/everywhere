@@ -1,0 +1,74 @@
+.join-content-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 30px 40px;
+
+}
+.join-content-box input {
+  height: 48px;
+  line-height: 48px;
+}
+
+.join-header {
+  position: relative;
+  height:70px;
+  margin-bottom: 30px;
+  
+}
+.join-header > h2 {
+  font-size: 26px;
+  line-height: 70px;
+  font-family: "Katuri";
+
+}
+.join-header > span {
+  position: absolute;
+  left:0px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.join-header > span > i {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.join-body {
+}
+.join-footer {
+}
+.form-each {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.form-each label {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom:6px;
+
+}
+
+.form-each-email { 
+  display: flex;
+  flex-wrap: wrap;
+}
+.email-input {
+  width: calc(100% - 110px);
+  margin-right:10px;
+}
+.email-check-btn {
+  width:100px;
+  border:1px solid #ddd;
+  height: 48px;
+  padding:0 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.email-check-num {
+  margin-top:10px;
+}

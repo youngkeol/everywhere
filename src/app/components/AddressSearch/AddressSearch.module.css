@@ -1,0 +1,41 @@
+.address-input-box {
+  position: relative
+}
+
+.address-input-box>i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #262626;
+  font-size: 18px
+}
+
+.address-input-box>input {
+  padding-left: 34px;
+  background-color: #fff;
+}
+.address-input-box>input:read-only {
+  background-color: #fff !important;
+}
+
+.current-position-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #262626;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ebebeb;
+}
+
+.current-position-btn>i {
+  font-size: 16px;
+  margin-right: 3px;
+  margin-top: -1px;
+}

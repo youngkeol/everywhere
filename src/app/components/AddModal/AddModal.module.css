@@ -1,0 +1,39 @@
+.modal-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.modal-tit {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  color:#262626;
+}
+
+.modal-close-btn>i {
+  font-size: 32px;
+}
+
+.modal-body {}
+
+.modal-each-con {
+  margin-bottom: 20px;
+}
+
+.modal-footer {}
+
+
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {
+  
+}

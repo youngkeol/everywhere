@@ -1,0 +1,90 @@
+.my-swiper {
+  height: 100%;
+}
+.swiper-wrapper {
+  height: 100%;
+}
+
+.my-swiper .swiper-slide {
+  min-width: 280px;
+  width: 280px;
+  height: 100%;
+  border-radius: 16px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  box-shadow: 2px 4px 10px rgb(137 137 137 / 10%);
+}
+
+.banner-box-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.banner-con {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  padding:20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-image-box {
+  width:80px !important;
+  height: 80px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+}
+
+.banner-txt-box {
+  width:calc(100% - 80px);
+  padding-left:10px;
+}
+
+.banner-con  h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.banner-con  p {
+  font-size: 14px;
+  color:#6d6d6d;
+}
+
+
+
+.my-swiper>*>*>div>div {
+  margin: 0 10px;
+}
+
+.my-swiper div {
+  height: 100%;
+}
+
+
+/* PC - 사이드 제거*/
+@media screen and (max-width: 1280px) {}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}

@@ -1,0 +1,4 @@
+/*슬라이드용 css*/
+.slick-slide {
+  margin: 0 5px; /* 슬라이드에 10px 좌우 마진 추가 */
+}

@@ -1,0 +1,33 @@
+.add-button {
+  width: 100%;
+}
+
+.add-button.big {
+  width: 100%;
+  font-size: 17px;
+  color:#fff;
+  padding:10px 5px;
+  border:1px solid #ddd;
+  background: linear-gradient(174deg, rgba(101, 180, 140, 1) 0%, rgba(34, 161, 150, 1) 100%);
+  border-radius: 12px;
+}
+
+.add-button.red {
+  background: #ed6262;
+}
+
+
+
+@media screen and (max-width: 1280px) {}
+
+/* 낮은 해상도 PC, 테블릿  */
+@media screen and (max-width: 1024px) {}
+
+/* 테블릿 세로  - */
+@media screen and (max-width: 768px) {}
+
+/* 모바일  */
+@media screen and (max-width: 480px) {}
+
+/* 모바일  */
+@media screen and (max-width: 360px) {}
