@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { fetchPublicPlaces } from "@/src/lib/publicPlaces/publicPlacesApi";
 import LoadingBox from "../LoadingBox/LoadingBox";
 import classes from "./PublicPlacesBox.module.css";
+import defaultImg from "@/public/images/common/default_img.png";
+
+
 import Image from "next/image";
 const PublicPlacesBox = ({ selectedValue, openPublicPlaceDetailHandler }) => {
   const [isLoaded, setIsLoaded] = useState(false);
